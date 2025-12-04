@@ -75,7 +75,7 @@ NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 streamlit run main.py
 ```
 
-Important_notes:
+**Important Notes:**
   - The vector database is created locally on your system
   - You can upload multiple files and the chatbot will answer using all of them
   - To reset everything, delete the chroma folder or use the clear option if available
