@@ -49,12 +49,28 @@ This makes the chatbot:
 
 ## How to Run the Project
 
-
 **Clone the github repository**
 ```bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
+```
 
-**Clone the github repository**
+## Go inside the project folder
 ```bash
-git clone <PASTE YOUR GITHUB REPO LINK HERE>
+cd <YOUR REPO FOLDER NAME>
+```
 
+## Install all required python packages
+```bash
+pip install -r requirements.txt
+```
+
+## Create a file to store your nvidia api key & add your nvidia api key to the .env file
+```bash
+echo "NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx" > .env
+```
+
+
+## Run the streamlit application
+```bash
+streamlit run main.py
+```
