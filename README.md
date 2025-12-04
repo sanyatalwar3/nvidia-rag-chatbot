@@ -54,23 +54,28 @@ This makes the chatbot:
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 ```
 
-**Go inside the project folder
+**Go inside the project folder**
 ```bash
 cd <YOUR REPO FOLDER NAME>
 ```
 
-**Install all required python packages
+**Install all required python packages**
 ```bash
-pip install -r requirements.txt
+pip install streamlit requests chromadb PyPDF2 python-dotenv
 ```
 
-**Create a file to store your nvidia api key & add your nvidia api key to the .env file
+**Create a file to store your nvidia api key (.env) & add your nvidia api key to the .env file**
 ```bash
-echo "NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx" > .env
+NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 ```
 
 
-## Run the streamlit application
+## Run the streamlit application** 
 ```bash
 streamlit run main.py
 ```
+
+Important_notes:
+  - The vector database is created locally on your system
+  - You can upload multiple files and the chatbot will answer using all of them
+  - To reset everything, delete the chroma folder or use the clear option if available
