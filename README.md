@@ -49,23 +49,20 @@ This makes the chatbot:
 
 ## How to Run the Project
 
-```bash
+# Clone the GitHub repository
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
-cd <YOUR REPO FOLDER NAME>
-bash
-Copy code
-pip install -r requirements.txt
-bash
-Copy code
-touch .env
-bash
-Copy code
-NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
-bash
-Copy code
-streamlit run main.py
-css
-Copy code
 
-Just paste this directly where you stopped.  
-If you want, I can also make a **reset / clear ChromaDB bash block** in same style.
+# Go inside the project folder
+cd <YOUR REPO FOLDER NAME>
+
+# Install all required Python packages
+pip install -r requirements.txt
+
+# Create a file to store your NVIDIA API key
+touch .env
+
+# Add your NVIDIA API key to the .env file
+echo "NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx" > .env
+
+# Run the Streamlit application
+streamlit run main.py
