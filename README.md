@@ -49,9 +49,12 @@ This makes the chatbot:
 
 ## How to Run the Project
 
-## how to run the project
 
-**clone the github repository**
+**Clone the github repository**
+```bash
+git clone <PASTE YOUR GITHUB REPO LINK HERE>
+
+**Clone the github repository**
 ```bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 
