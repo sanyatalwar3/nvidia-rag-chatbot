@@ -1,92 +1,106 @@
-# NVIDIA RAG Chatbot  
-### Workshop: Build Your First AI Chatbot: RAG with NVIDIA  
-**Organized by: ACM-W**
+Build Your First AI Chatbot: RAG with NVIDIA
 
-This project is a simple **Retrieval-Augmented Generation (RAG)** based AI chatbot built using **Streamlit, ChromaDB, and NVIDIA NIM**.  
-The chatbot allows users to upload their own documents and ask questions directly from those documents using AI.
+Organized by: ACM-W
 
-This project was created for the ACM-W workshop:  
-**Build Your First AI Chatbot: RAG with NVIDIA**
+This repository contains the complete code used in the ACM-W workshop “Build Your First AI Chatbot: RAG with NVIDIA”.
+In this workshop, students learn the basics of Retrieval-Augmented Generation (RAG) and build a working AI chatbot that can answer questions from their own documents.
 
----
+Basics of RAG (Retrieval-Augmented Generation)
 
-## What This Project Does
+RAG is a technique that combines document retrieval with text generation.
 
-- Upload TXT or PDF documents  
-- Split documents into smaller chunks  
-- Convert chunks into embeddings using NVIDIA AI  
-- Store embeddings in a vector database using ChromaDB  
-- Retrieve relevant chunks for each user question  
-- Generate accurate answers using a Large Language Model  
-- Maintain chat history during the session  
+Instead of answering only from what a model already knows, a RAG system:
 
----
+First searches relevant information from uploaded documents
 
-## Tech Stack Used
+Then uses that information as context to generate accurate answers
 
-- Python  
-- Streamlit  
-- ChromaDB  
-- NVIDIA NIM  
-- Requests  
-- PyPDF2  
+This makes the chatbot:
 
----
+More accurate
 
-## Requirements
+Less likely to hallucinate
 
-- Python 3.8+  
-- Streamlit  
-- ChromaDB  
-- NVIDIA NIM  
-- Requests  
-- PyPDF2  
+Able to answer from private PDFs and documents
 
-To install the requirements, run:
+Easy to update without retraining the model
 
-```bash
-pip install -r requirements.txt
+What This Chatbot Does
 
-How to Run This Project
-Step 1: Clone the Repository
+Allows users to upload TXT or PDF documents
+
+Splits documents into smaller chunks
+
+Converts each chunk into embeddings using NVIDIA AI
+
+Stores embeddings in a vector database using ChromaDB
+
+Retrieves the most relevant chunks for each question
+
+Sends the retrieved context to the LLM
+
+Generates grounded answers from the documents
+
+Maintains chat history during the session
+
+Tech Stack
+
+Python
+
+Streamlit
+
+ChromaDB
+
+NVIDIA NIM
+
+Requests
+
+PyPDF2
+
+python-dotenv
+
+How to Run the Project
+
+Clone the repository:
+
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 cd <YOUR REPO FOLDER NAME>
 
-Step 2: Install Dependencies
+
+Install dependencies:
+
 pip install -r requirements.txt
 
-Step 3: Create a .env File
+
+Create a .env file:
+
 touch .env
 
 
-Add this line inside .env:
+Add your NVIDIA API key inside .env:
 
-NVIDIA_API_KEY=nvapi-xxxxxxxxxxxx
+NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 
-Step 4: Run the Application
+
+Run the application:
+
 streamlit run main.py
 
 Important Notes for Students
 
 The vector database is created locally on your system
 
-You can upload multiple files and the chatbot will answer using all of them
+You can upload multiple files and the chatbot will use all of them
 
-To reset everything, delete the chroma folder or use the clear option if available
+To reset everything, delete the chroma folder
 
-About RAG
+Do NOT upload your .env file or API key to GitHub
 
-RAG (Retrieval-Augmented Generation) combines document retrieval with text generation so that the AI answers using real documents instead of guessing.
-This allows more accurate answers, reduced hallucinations, and support for private documents.
+About the Workshop
 
-Powered By
-
-NVIDIA NIM
-
-ChromaDB
-
-Streamlit
+This project was developed as part of the ACM-W technical workshop
+“Build Your First AI Chatbot: RAG with NVIDIA”, where students learned the fundamentals of RAG and built an end-to-end document-based chatbot using NVIDIA models.
 
 License
 
-This project is for educational and ACM-W workshop use only. 
+This project is for educational and ACM-W workshop use only.
