@@ -46,3 +46,26 @@ This makes the chatbot:
 - python-dotenv  
 
 ---
+
+## How to Run the Project
+
+```bash
+git clone <PASTE YOUR GITHUB REPO LINK HERE>
+cd <YOUR REPO FOLDER NAME>
+bash
+Copy code
+pip install -r requirements.txt
+bash
+Copy code
+touch .env
+bash
+Copy code
+NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
+bash
+Copy code
+streamlit run main.py
+css
+Copy code
+
+Just paste this directly where you stopped.  
+If you want, I can also make a **reset / clear ChromaDB bash block** in same style.
