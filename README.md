@@ -54,17 +54,17 @@ This makes the chatbot:
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 ```
 
-## Go inside the project folder
+**Go inside the project folder
 ```bash
 cd <YOUR REPO FOLDER NAME>
 ```
 
-## Install all required python packages
+**Install all required python packages
 ```bash
 pip install -r requirements.txt
 ```
 
-## Create a file to store your nvidia api key & add your nvidia api key to the .env file
+**Create a file to store your nvidia api key & add your nvidia api key to the .env file
 ```bash
 echo "NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx" > .env
 ```
