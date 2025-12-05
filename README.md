@@ -70,7 +70,7 @@ NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 ```
 
 
-## Run the streamlit application** 
+** Run the streamlit application** 
 ```bash
 streamlit run main.py
 ```
